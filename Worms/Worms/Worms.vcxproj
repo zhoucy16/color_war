@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D1A31A58-F173-431C-942F-E558F7D7A86A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Worms</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="event.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="event.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="item.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ui\00.bmp" />
+    <Image Include="res\ui\01.bmp" />
+    <Image Include="res\ui\02.bmp" />
+    <Image Include="res\ui\03.bmp" />
+    <Image Include="res\ui\04.bmp" />
+    <Image Include="res\ui\05.bmp" />
+    <Image Include="res\ui\06.bmp" />
+    <Image Include="res\ui\07.bmp" />
+    <Image Include="res\ui\08.bmp" />
+    <Image Include="res\ui\09.bmp" />
+    <Image Include="res\ui\10.bmp" />
+    <Image Include="res\ui\11.bmp" />
+    <Image Include="res\ui\12.bmp" />
+    <Image Include="res\ui\13.bmp" />
+    <Image Include="res\ui\14.bmp" />
+    <Image Include="res\ui\15.bmp" />
+    <Image Include="res\ui\16.bmp" />
+    <Image Include="res\ui\17.bmp" />
+    <Image Include="res\ui\18.bmp" />
+    <Image Include="res\ui\19.bmp" />
+    <Image Include="res\ui\20.bmp" />
+    <Image Include="res\ui\21.bmp" />
+    <Image Include="res\ui\22.bmp" />
+    <Image Include="res\ui\23.bmp" />
+    <Image Include="res\ui\24.bmp" />
+    <Image Include="res\ui\25.bmp" />
+    <Image Include="res\ui\26.bmp" />
+    <Image Include="res\ui\27.bmp" />
+    <Image Include="res\ui\28.bmp" />
+    <Image Include="res\ui\29.bmp" />
+    <Image Include="res\ui\30.bmp" />
+    <Image Include="res\ui\AGAIN.bmp" />
+    <Image Include="res\ui\BACK.bmp" />
+    <Image Include="res\ui\BIU.bmp" />
+    <Image Include="res\ui\BOOM1.bmp" />
+    <Image Include="res\ui\BOOM10.bmp" />
+    <Image Include="res\ui\BOOM11.bmp" />
+    <Image Include="res\ui\BOOM2.bmp" />
+    <Image Include="res\ui\BOOM3.bmp" />
+    <Image Include="res\ui\BOOM4.bmp" />
+    <Image Include="res\ui\BOOM5.bmp" />
+    <Image Include="res\ui\BOOM6.bmp" />
+    <Image Include="res\ui\BOOM7.bmp" />
+    <Image Include="res\ui\BOOM8.bmp" />
+    <Image Include="res\ui\BOOM9.bmp" />
+    <Image Include="res\ui\CLOUD1.bmp" />
+    <Image Include="res\ui\CLOUD2.bmp" />
+    <Image Include="res\ui\CLOUD3.bmp" />
+    <Image Include="res\ui\CLOUD4.bmp" />
+    <Image Include="res\ui\color.bmp" />
+    <Image Include="res\ui\color2.bmp" />
+    <Image Include="res\ui\DEFEAT.bmp" />
+    <Image Include="res\ui\HELP.bmp" />
+    <Image Include="res\ui\HERO_LONG_0.bmp" />
+    <Image Include="res\ui\HERO_LONG_1.bmp" />
+    <Image Include="res\ui\HERO_LONG_2.bmp" />
+    <Image Include="res\ui\HERO_LONG_3.bmp" />
+    <Image Include="res\ui\HERO_LONG_4.bmp" />
+    <Image Include="res\ui\HERO_LONG_5.bmp" />
+    <Image Include="res\ui\J0.bmp" />
+    <Image Include="res\ui\J1.bmp" />
+    <Image Include="res\ui\J2.bmp" />
+    <Image Include="res\ui\J3.bmp" />
+    <Image Include="res\ui\J4.bmp" />
+    <Image Include="res\ui\J5.bmp" />
+    <Image Include="res\ui\MENU.bmp" />
+    <Image Include="res\ui\New York.bmp" />
+    <Image Include="res\ui\NewYork.bmp" />
+    <Image Include="res\ui\OCEAN.bmp" />
+    <Image Include="res\ui\RESUME.bmp" />
+    <Image Include="res\ui\SH.bmp" />
+    <Image Include="res\ui\Shanghai.bmp" />
+    <Image Include="res\ui\start.bmp" />
+    <Image Include="res\ui\Taji Mahal.bmp" />
+    <Image Include="res\ui\taji.bmp" />
+    <Image Include="res\ui\TITLE.bmp" />
+    <Image Include="res\ui\VICTORY.bmp" />
+    <Image Include="res\ui\图标.ico" />
+    <Image Include="res\ui\墓碑2.bmp" />
+    <Image Include="res\ui\帮助.bmp" />
+    <Image Include="res\ui\未标题-1.bmp" />
+    <Image Include="res\ui\精准打击.bmp" />
+    <Image Include="res\ui\轰炸.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Worms.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
